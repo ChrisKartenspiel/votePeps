@@ -1,12 +1,12 @@
 import alt from '../alt';
 
 class CharacterListActions {
-  constructor(
+  constructor(){
     this.generateActions(
       'getCharactersSuccess',
       'getCharactersFail'
     )
-  )
+  }
 
   getCharacters(payload){
     let url = '/api/characters/top';

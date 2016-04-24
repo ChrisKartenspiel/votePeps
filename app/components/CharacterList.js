@@ -31,7 +31,7 @@ class CharacterList extends React.Component {
   }
 
   render(){
-    let charactersList = this.state.characters.map((character. index) =>{
+    let charactersList = this.state.characters.map((character, index) =>{
       return (
         <div key={character.char|acterId} className='list-group-item animated fadeIn'>
           <div className='media'>
@@ -39,7 +39,7 @@ class CharacterList extends React.Component {
             <div className='pull-left thumb-lg'>
               <Link to={'/characters/' + character.characterId}>
                 <img className='media-object' src={'http://image.eveonline.com/Character/' + character.characterId + '_128.jpg'} />
-              </link>
+              </Link>
             </div>
             <div className='media-body'>
               <h4 className='media-heading'>
@@ -66,4 +66,4 @@ class CharacterList extends React.Component {
   }
 }
 
-export defaul CharacterList;
+export default CharacterList;

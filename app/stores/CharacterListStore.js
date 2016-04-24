@@ -12,7 +12,7 @@ class CharacterListStore {
     this.characters = data;
   }
 
-  onGetCharactersFail(jqXhr) =>{
+  onGetCharactersFail(jqXhr){
     toastr.error(jqXhr.responseJSON.message);
   }
 }
